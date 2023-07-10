@@ -55,9 +55,9 @@ const Education = () => {
             place="Mission Ready HQ"
             location="Auckland, NZ"
             info={`<b>NZQA Level 6 Applied Technology Product Solutions (Software)</b>
-A practical, mentored, real-world work experience.\nInterned with Auckland Council - see above for details.\n
-<b>NZQA Level 5 Cloud and DevOps Developer Accelerator</b>\nIntensive course in solving complex enterprise-level problems using Cloud, Artificial Intelligence, and DevOps practices.\nCloud service (Azure, Bing Search, azure deploy), AI (Chat-bot with google dialog flow), DevOps and automated deployment (CI/CD), No-SQL database (MongoDB), Restful API, Unit testing.\n
-<b>NZQA Level 4 Full Stack Developer Accelerator</b>\nDeveloped foundational skills in coding, including building responsive full stack web apps, using HTML, CSS, JavaScript, React.js, Node.js, and MySQL.`}
+            A practical, mentored, real-world work experience.\nInterned with Auckland Council - see above for details.\n
+            <b>NZQA Level 5 Cloud and DevOps Developer Accelerator</b>\nIntensive course in solving complex enterprise-level problems using Cloud, Artificial Intelligence, and DevOps practices.\nCloud service (Azure, Bing Search, azure deploy), AI (Chat-bot with google dialog flow), DevOps and automated deployment (CI/CD), No-SQL database (MongoDB), Restful API, Unit testing.\n
+            <b>NZQA Level 4 Full Stack Developer Accelerator</b>\nDeveloped foundational skills in coding, including building responsive full stack web apps, using HTML, CSS, JavaScript, React.js, Node.js, and MySQL.`}
           />
           <Details
             type="Bachelor of Culinary Arts and Business"

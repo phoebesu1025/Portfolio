@@ -24,6 +24,7 @@ const FeaturedProject = ({
   link,
   github,
   stack,
+  request,
 }) => {
   return (
     <article
@@ -68,7 +69,7 @@ const FeaturedProject = ({
           {summary}
         </p>
         <p className="text-dark/75 dark:text-primaryDark">{stack}</p>
-        <div className="mt-2 flex items-center">
+        <div className="mt-6 flex items-center ">
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
           </Link>
@@ -82,6 +83,9 @@ const FeaturedProject = ({
             Visit Project
           </Link>
         </div>
+        <p className="mt-4  text-dark/75 dark:text-light/75 font-medium text-2xl  ">
+          {request}
+        </p>
       </div>
     </article>
   );
@@ -174,7 +178,7 @@ Base on the Figma prototype redesigned by my designer partner, we completed most
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                title="MPTT Project"
+                title="MPTT Project "
                 img={project4}
                 summary="
                 Collaborated with two other interns, a developer and a UX designer, to develop a cross-platform mobile app aimed at closing the employment gap for Māori and Pacifika students in Auckland.
@@ -183,6 +187,7 @@ Base on the Figma prototype redesigned by my designer partner, we completed most
                 github="/"
                 type="Featured Project"
                 stack="✨React ✨TypeScript ✨Ionic "
+                request="(Upon on request)"
               />
             </div>
 

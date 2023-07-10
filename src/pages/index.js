@@ -9,8 +9,11 @@ import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import TransitionEffect from "@/components/TransitionEffect";
+import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
 
 export default function Home() {
+  const [mode, setMode] = useThemeSwitcher();
+
   return (
     <>
       <Head>
@@ -66,7 +69,12 @@ export default function Home() {
         </Layout>
         <HireMe />
         <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
-          <Image src={lightBulb} alt="" className="w-full h-auto " />
+          <Image
+            src={lightBulb}
+            alt=""
+            className={`w-full h-auto cursor-pointer opacity-30 brightness-75 dark:opacity-100 dark:brightness-150	`}
+            onClick={() => setMode(mode === "light" ? "dark" : "light")}
+          />
         </div>
       </main>
     </>
