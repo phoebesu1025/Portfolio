@@ -10,6 +10,7 @@ import HireMe from "@/components/HireMe";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import TransitionEffect from "@/components/TransitionEffect";
 import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [mode, setMode] = useThemeSwitcher();
@@ -72,7 +73,7 @@ export default function Home() {
           <Image
             src={lightBulb}
             alt=""
-            className={`w-full h-auto cursor-pointer opacity-30 brightness-75 dark:opacity-100 dark:brightness-150	`}
+            className={`w-full h-auto cursor-pointer opacity-30 brightness-100 dark:opacity-100 dark:brightness-150 animate-pulse	dark:animate-none`}
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
           />
         </div>

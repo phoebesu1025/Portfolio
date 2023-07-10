@@ -140,7 +140,7 @@ const NavBar = () => {
       {isOpen ? (
         <motion.div
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
-          animate={{ scale: 1, opacity: 1, transitionDuration: "1s" }}
+          animate={{ scale: 1, opacity: 1, transitionDuration: "0s" }}
           className="min-w-[70vw]  flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
         >
           <nav className="flex items-center flex-col justify-center mb-4">
